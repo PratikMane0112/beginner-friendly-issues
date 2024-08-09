@@ -24,9 +24,9 @@ A custom 404 error page improves user experience when they land on a broken or n
 
 **Steps to Add a 404 Error Page:**
 
-1.Create a new HTML page named 404.html.
-2.Design the page with a friendly message and navigation options.
-3.Configure your server or hosting service to serve this page for 404 errors.
+1. Create a new HTML page named 404.html.
+2. Design the page with a friendly message and navigation options.
+3. Configure your server or hosting service to serve this page for 404 errors.
 
 ```html
 <h1>Oops! Page Not Found</h1>
@@ -40,9 +40,9 @@ Responsive design ensures your website looks good on all devices.
 
 **Steps to Make Pages Responsive:**
 
-1.Use media queries in your CSS to adjust styles for different screen sizes.
-2.Use relative units like percentages or em instead of fixed units like px.
-3.Utilize flexible grid systems or frameworks like Bootstrap.
+1. Use media queries in your CSS to adjust styles for different screen sizes.
+2. Use relative units like percentages or em instead of fixed units like px.
+3. Utilize flexible grid systems or frameworks like Bootstrap.
 
 ```
 @media (max-width: 600px) {
@@ -58,9 +58,9 @@ Dark mode can enhance user experience by reducing eye strain in low-light condit
 
 **Steps to Add Dark & Light Mode:**
 
-1.Define styles for both dark and light modes in your CSS.
-2.Add a toggle switch to switch between modes.
-3.Use JavaScript to toggle classes based on user preference.
+1. Define styles for both dark and light modes in your CSS.
+2. Add a toggle switch to switch between modes.
+3. Use JavaScript to toggle classes based on user preference.
 
 ```
 body.light-mode {
@@ -79,8 +79,8 @@ Clearly define how others can contribute to your project.
 
 **Steps to Add License & Contributing Guidelines:**
 
-1.Choose a license and add a LICENSE file to your repository.
-2.Create a CONTRIBUTING.md file with guidelines on how to contribute.
+1. Choose a license and add a LICENSE file to your repository.
+2. Create a CONTRIBUTING.md file with guidelines on how to contribute.
 
 ```
 # Contributing Guidelines
@@ -96,8 +96,8 @@ Hover effects can enhance the interactivity of your website.
 
 **Steps to Add Hover Effects:**
 
-1.Use CSS :hover pseudo-class to define styles for hover state.
-2.Add transitions for smooth effects.
+1. Use CSS :hover pseudo-class to define styles for hover state.
+2. Add transitions for smooth effects.
 
 ```
 button:hover {
@@ -113,8 +113,8 @@ A preloader can improve user experience by displaying a loading animation while 
 
 **Steps to Add a Preloader:**
 
-1.Create a preloader element and style it.
-2.Use JavaScript to hide the preloader once the page loads.
+1. Create a preloader element and style it.
+2. Use JavaScript to hide the preloader once the page loads.
 
 ```
 <div id="preloader"></div>
@@ -132,8 +132,8 @@ A spinner indicates loading processes, providing visual feedback to users.
 
 **Steps to Add a Spinner:**
 
-1.Create a spinner element with CSS animations.
-2.Display the spinner during loading events.
+1. Create a spinner element with CSS animations.
+2. Display the spinner during loading events.
 
 ```
 <div class="spinner"></div>
@@ -161,7 +161,7 @@ A custom cursor can make your website more engaging.
 
 **Steps to Enhance the Cursor:**
 
-1.Define custom cursor styles using CSS.
+1. Define custom cursor styles using CSS.
 
 ```
 body {
@@ -178,8 +178,8 @@ Form validations ensure that users submit correct and complete information.
 
 **Steps to Add Form Validations:**
 
-1.Use HTML5 validation attributes like required, pattern, etc.
-2.Add JavaScript for custom validations.
+1. Use HTML5 validation attributes like required, pattern, etc.
+2. Add JavaScript for custom validations.
 
 ```
 <form id="myForm">
@@ -194,5 +194,39 @@ Form validations ensure that users submit correct and complete information.
       alert('Please fill out the form correctly.');
     }
   });
+</script>
+```
+
+## 11. Adding a Scroll to Top Button
+
+A "Scroll to Top" button enhances user experience by allowing easy navigation back to the top of the page.
+
+**Steps to Add a Scroll to Top Button:**
+
+1. Create a button element in your HTML file.
+2. Style the button with CSS to position it fixed at the bottom right corner.
+3. Add JavaScript to handle the scroll functionality.
+
+```html
+<!-- Scroll to Top Button -->
+<button id="scrollToTopBtn">Scroll to Top</button>
+<script>
+  // Get the button
+  var mybutton = document.getElementById("scrollToTopBtn");
+
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  };
+
+  // When the user clicks on the button, scroll to the top of the document
+  mybutton.onclick = function() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  };
 </script>
 ```
