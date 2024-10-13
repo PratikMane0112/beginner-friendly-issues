@@ -1,4 +1,4 @@
-# Beginner Friendly Issues to Contribute to Open Source
+# Beginner Friendly Issues for Contributing to Open Source
 
 ![t](https://github.com/user-attachments/assets/2c6274cf-9c8a-4d77-87ae-e4ea72bac8e9)
 
