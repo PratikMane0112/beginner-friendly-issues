@@ -170,7 +170,6 @@ body {
 ```
 
 - Also you can use my npm package ["react-jumbo-cursor"](https://www.npmjs.com/package/react-jumbo-cursor)
-  
 
 ## 10. Adding Form Validations
 
